@@ -19,7 +19,7 @@ namespace SBSacemedmy.Controllers
             _SbsService = sbsService;
         }
 
-        [HttpGet]
+        [HttpGet("GetAllPlayers")]
        public async Task<ServiceResponse<List<Order>>> GetallPlayer()
         {
             return await _SbsService.GetallPlayers();
